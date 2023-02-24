@@ -6,8 +6,9 @@ public class SnakeAndLadder {
 
     public static void main(String[] args) {
         System.out.println("Welcome to Snake and Ladder Program");
-        int position = 0;
+        int position = 0; int count = 0;
         while (position <= WINNING_POSITION) {
+            count++;
             int diceRoll = (int) Math.floor(Math.random() * 10) % 6 + 1;
             int option = (int) Math.floor(Math.random() * 10) % 3;
             switch (option) {
@@ -39,6 +40,7 @@ public class SnakeAndLadder {
             } else {
                 System.out.println("New Position: " + position);
             }
+            System.out.println("Number of times dice roll " +count);
         }
 
     }
