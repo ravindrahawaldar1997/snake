@@ -17,6 +17,7 @@ public class SnakeAndLadder {
                     position += diceRoll;
                     if (position > 100) {
                         position -= diceRoll;
+                        System.out.println("Dice face invalid play stay in same position");
                     }
                     break;
                 case 1:
